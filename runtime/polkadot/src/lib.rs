@@ -1572,10 +1572,7 @@ construct_runtime! {
 	}
 }
 
-impl pallet_sudo::Config for Runtime {
-	type Event = Event;
-	type Call = Call;
-}
+impl pallet_sudo::Config for Runtime {}
 
 /// The address format for describing accounts.
 pub type Address = sp_runtime::MultiAddress<AccountId, ()>;

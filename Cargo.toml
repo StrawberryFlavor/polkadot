@@ -22,6 +22,7 @@ version = "0.9.38"
 polkadot-cli = { path = "cli", features = [ "kusama-native", "westend-native", "rococo-native" ]  }
 color-eyre = { version = "0.6.1", default-features = false }
 tikv-jemallocator = "0.5.0"
+libp2p-core = "0.38.0"
 
 [dev-dependencies]
 assert_cmd = "2.0.4"
@@ -197,10 +198,10 @@ debug-assertions = true
 overflow-checks = true
 
 [features]
-runtime-benchmarks= [ "polkadot-cli/runtime-benchmarks" ]
-try-runtime = [ "polkadot-cli/try-runtime" ]
-fast-runtime = [ "polkadot-cli/fast-runtime" ]
-runtime-metrics = [ "polkadot-cli/runtime-metrics" ]
+runtime-benchmarks= ["polkadot-cli/runtime-benchmarks"]
+try-runtime = ["polkadot-cli/try-runtime"]
+fast-runtime = ["polkadot-cli/fast-runtime"]
+runtime-metrics = ["polkadot-cli/runtime-metrics"]
 pyroscope = ["polkadot-cli/pyroscope"]
 
 # Configuration for building a .deb package - for use with `cargo-deb`
